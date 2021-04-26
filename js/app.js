@@ -41,12 +41,26 @@ newCarsArr.forEach((c) => {
 console.groupEnd();
 console.log("");
 
-console.group("5. Atrinkite tik elektrinius automobilius");
+console.groupCollapsed("5. Atrinkite tik elektrinius automobilius");
 let elektriniai = newCarsArr.filter((c) => {
   // grazinti true jei fuel type masyve yra verte pavadinimu 'electric'
   if (c.fuelTypes.includes("electric")) return true;
 });
 console.log(elektriniai);
+
+console.groupEnd();
+console.log("");
+
+console.groupCollapsed("6. Atrinkite tik benzininius automobilius, naujesnius nei 2016 metai");
+let atrinktiBenz = newCarsArr.filter((c) => {
+  return c.fuelTypes.includes("petrol") && c.year > 2016;
+});
+console.log(atrinktiBenz);
+
+console.groupEnd();
+console.log("");
+
+console.group("7. Atrinkite audi tipo automobilius nuo 2012 iki 2016, kurie nėra dyzeliniai");
 
 console.groupEnd();
 console.log("");
