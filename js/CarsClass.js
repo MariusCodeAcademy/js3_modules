@@ -13,9 +13,11 @@ export default class Car {
     //   dysel/electric
     //   petrol/gas
     //   uranus
-    this.fuelTypes;
     // 2 galimi keliai
     // kai turim viena kuro tipa
     // kai turim daugiau kuro tipu
+
+    // console.log("this.fuelTypes;", this.fuelTypes.join("/"));
+    return this.fuelTypes.join("/");
   }
 }
