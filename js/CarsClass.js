@@ -9,4 +9,13 @@ export default class Car {
     this.fuelTypes = fuelTypes;
     this.price = price;
   }
+  getFuleType() {
+    //   dysel/electric
+    //   petrol/gas
+    //   uranus
+    this.fuelTypes;
+    // 2 galimi keliai
+    // kai turim viena kuro tipa
+    // kai turim daugiau kuro tipu
+  }
 }

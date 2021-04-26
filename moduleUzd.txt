@@ -1,0 +1,9 @@
+Sukurti skaiciuotuva su keturiom pagr funkcijom
+visas funkcijas tureti atskiruose js failuose 
+
+isitraukti funkcijas is visu failu i viena ir panaudoti jas skaiciavimui su keliais skirtintai skaiciais
+
+sukurti atskira duomenu faila kuriame issaugoti keturis kintamuosius, juos exportuoti
+isitraukti juos i savo skaiciavimo faila ir atlikti veiksmus su isitrauktais kinamaisiais 
+
+persivadinti du is kinamuju i kitokius vardus
