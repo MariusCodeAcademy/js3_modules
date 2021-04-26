@@ -1,6 +1,8 @@
 "use strict"; // here we go again
 // importuoti duomenis is kitu js failu
+// importuojam is default exporto
 import Car from "./CarsClass.js";
+// importuojam is named exporto
 import { carsArr, carArrData } from "./cars.js";
 console.log("app js");
 
