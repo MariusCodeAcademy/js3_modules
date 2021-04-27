@@ -6,7 +6,7 @@ export default class Car {
     this.model = model;
     this.year = year;
     this.color = color;
-    this.fuelTypes = fuelTypes;
+    this.fuelTypes = fuelTypes; // ["electric", "gas", "petrol"]
     this.price = price;
   }
   getFuleType() {
@@ -19,5 +19,8 @@ export default class Car {
 
     // console.log("this.fuelTypes;", this.fuelTypes.join("/"));
     return this.fuelTypes.join("/");
+  }
+  get priceDollarsFormat() {
+    return "$" + this.price + ".00";
   }
 }

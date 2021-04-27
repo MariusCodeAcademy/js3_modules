@@ -62,7 +62,61 @@ console.log(atrinktiBenz);
 console.groupEnd();
 console.log("");
 
-console.group("7. Atrinkite audi tipo automobilius nuo 2012 iki 2016, kurie nėra dyzeliniai");
+console.groupCollapsed(
+  "7. Atrinkite audi tipo automobilius nuo 2012 iki 2016, kurie nėra dyzeliniai"
+);
+let atrinkti7 = newCarsArr
+  .filter((c) => c.brand === "Audi")
+  .filter((c) => c.year >= 2012 && c.year < 2016)
+  .filter((c) => !c.fuelTypes.includes("dysel"));
+console.table(atrinkti7);
+
+console.groupEnd();
+console.log("");
+
+console.groupCollapsed("8. Suskaičiuokite 5 punkte gautų automobilių kainos vidurkį");
+let electrKainuVidurkis = elektriniai.reduce(
+  (avg, carObj) => avg + carObj.price / elektriniai.length,
+  0
+);
+elektriniai.forEach((c) => console.log(c.price));
+console.log({ electrKainuVidurkis });
+
+console.groupEnd();
+console.log("");
+
+console.groupCollapsed("9. Suskaičiuokite 6 punkte gautų automobilių bendrą vertę");
+let suma6 = atrinktiBenz.reduce((total, carObj) => {
+  console.log(carObj.brand, carObj.price, total);
+  return total + carObj.price;
+}, 0);
+console.log("6 punkto suma", suma6);
+
+console.groupEnd();
+console.log("");
+
+console.group(
+  "10. Panaudokite pradinį Car objektų masyvą performuoti duomenis į tokių objektų masyvą:"
+);
+const naujasMasyvas = newCarsArr.map((carObj) => {
+  return {
+    brand: carObj.brand,
+    model: carObj.model,
+    price: "$" + carObj.price + ".00",
+    fuel: carObj.getFuleType(),
+  };
+});
+const naujasMasyvasDestructurizuoti = newCarsArr.map((carObj) => {
+  let { brand, model, priceDollarsFormat } = carObj;
+  return {
+    brand,
+    model,
+    price: priceDollarsFormat,
+    fuel: carObj.getFuleType(),
+  };
+});
+// console.log(naujasMasyvas);
+console.log(naujasMasyvasDestructurizuoti);
 
 console.groupEnd();
 console.log("");

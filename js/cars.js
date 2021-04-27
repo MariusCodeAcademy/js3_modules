@@ -8,8 +8,9 @@ export const carArrData = [
   ["Audi", "A4", 2016, "white", ["dysel"], 8000],
   ["Toyta", "Avensis", 2018, "black", ["dysel", "electric"], 13000],
   ["Audi", "A7", 2011, "red", ["petrol"], 4000],
-  ["Nisan", "Z", 2015, "blue", ["petrol", "gas"], 4000],
+  ["Nisan", "Z", 2017, "blue", ["petrol", "gas"], 4000],
   ["Audi", "A6", 2020, "white", ["petrol", "electric"], 24000],
+  ["Audi", "A3", 2020, "tomato", ["petrol"], 27000],
 ];
 
 // norint tureti galimybe isikelti duomenis is sio failo i kita js faila mes turime juos exportuoti
